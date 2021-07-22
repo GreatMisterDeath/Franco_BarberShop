@@ -1,0 +1,65 @@
+// Estilos para la fuente
+@mixin mix_share_button_font
+{
+    font-family: 'Roboto', 'Arial';
+    font-size: $font-size-small !important;
+    font-weight: $font_weight_400;
+}
+
+// Propiedades del boton al hacer hover y focus
+@mixin mix_share_button_colors
+{
+    color: $color-white;
+    background-color: $color-nickel;
+    border-radius: 32px;
+
+    &:hover
+    {
+        background-color: $color-light-gray;
+    }
+
+    &:focus
+    {
+        background-color: $color-nickel;
+        box-shadow: 0 0 0 0.2rem $color-light-gray;
+    }
+}
+
+@media (max-width: 991px) // Centramos el contenido si la pantalla es de menor resoluciom
+{
+    .share__button-alignment
+    {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width: 992px) // Movemos el contenido a la izquierda si la pantalla es de mayor resolucion
+{
+    .share__button-alignment
+    {
+        text-align: center;
+        justify-content: left;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+// Boton pequeño (Compartir)
+.share__button-small
+{
+    width: 96px;
+
+    @include mix_share_button_colors;
+    @include mix_share_button_font;
+}
+
+// Boton mediano (Comentar en twitter)
+.share__button-medium
+{
+    width: 144px;
+
+    @include mix_share_button_colors;
+    @include mix_share_button_font;
+}

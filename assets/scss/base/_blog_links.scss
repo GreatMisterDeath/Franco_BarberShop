@@ -1,0 +1,35 @@
+// Para asignar los cambios de color necesarios a los links, sin tener que repetir lo mismo varias veces
+@mixin mix_link_color($color_normal, $color_hover, $color_focus)
+{
+    color: $color_normal;
+
+    &:hover
+    {
+        color: $color_hover;
+    }
+
+    &:focus
+    {
+        color: $color_focus;
+    }
+}
+
+// Modificacion de los colores de los links del articulo principal
+.article__link
+{
+    @include mix_link_color($color-spanish-pink, $color-eerie-black, $color-light-gray);
+}
+
+// Modificacion de los colores de los links del autor
+.author__link
+{
+    @include mix_link_color($color-spanish-pink, $color-eerie-black, $color-light-gray);
+
+    font-family: $font_style_roboto;
+}
+
+// Modificacion de los colores de los links de la barra de navegacion superior
+.nav-link
+{
+    @include mix_link_color($color-white !important, $color-ruddy-pink !important, $color-spanish-pink !important);
+}

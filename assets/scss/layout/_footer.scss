@@ -1,0 +1,11 @@
+// Color de fondo del footer y alineamiento del icono del bigote
+.footer__background-color
+{
+    background-color: $color-eerie-black;
+}
+
+//  Lo movemos un poco para alinearlo con el fondo del footer para que se vea centrado
+.footer__img-transform
+{
+    transform: translateY(10%);
+}

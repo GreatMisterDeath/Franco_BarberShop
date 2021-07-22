@@ -1,0 +1,18 @@
+// Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap');
+
+// Integracion de parciales
+@import 'abstract/reset'; // Reinicio de estilos
+@import 'abstract/variables'; // Variables de colores, tamaños de fuente etc...
+@import "vendors/bootstrap-5.0.2/bootstrap.scss"; // Bootstrap SASS
+@import 'base/blog_article'; // Propiedades del articulo principal del blog
+@import 'base/blog_links'; // Propiedades de los links de todo el sitio
+@import 'layout/author'; // Propiedades de los datos del autor
+@import 'layout/footer'; // Propiedades del footer
+@import 'layout/header'; // Propiedades del header
+@import 'layout/navbar'; // Propiedades de la barra de navegacion superior
+@import 'components/pagination_buttons'; // Botones inferiores de paginacion (anterior - pagina - siguiente)
+@import 'components/share_buttons'; // Botones para compartir y comentar en twitter
+//@import 'pages/pages'; Sin usar, carpeta vacia
+@import 'themes/_default_theme';

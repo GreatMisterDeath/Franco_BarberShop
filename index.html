@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Juego de caracteres -->
+        <meta charset="utf-8">
+        <!-- Responsibidad -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Estilos y scripts de Bootstrap mediante CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- Fuentes e iconos SVG -->
+        <script src="https://kit.fontawesome.com/957a4a8524.js" crossorigin="anonymous"></script>
+        <!-- Estilos personales -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <title>Barbershop</title>
+    </head>
+    <body>
+        <!-- Menu de navegacion -->
+        <nav class="navbar__background-color navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <!-- Logo del bigote -->
+                <figure class="navbar__image-transform ps-5" href="#">
+                    <img src="assets/img/logo.png" alt="logo-header-alt" width="72px" height="32px">
+                </figure>
+                <!-- Hamburguesa -->
+                <div class="pe-5">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- Navbar con sus opciones -->
+                <nav class="collapse navbar-collapse justify-content-end pe-5" id="navbarNav">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Horas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <!-- Imagen principal con su background -->
+        <header class="header__background d-flex flex-column justify-content-center">
+            <h1 class="header__background-font align-self-center">5 formas de cuidar<br/>tu corte cabello</h1>
+            <!-- Flechas que redireccionan a la seccion "articulo" -->
+            <a href="#articulo" class="align-self-center"><i class="header__svg-arrow1 fas fa-3x fa-chevron-down align-self-center"></i></a>
+            <a href="#articulo" class="align-self-center"><i class="header__svg-arrow2 fas fa-3x fa-chevron-down align-self-center"></i></a>
+        </header>
+        <!-- Articulo principal -->
+        <article class="container-fluid p-5" id="articulo">
+            <!-- Fecha -->
+            <p class="article__date">12 de abril de 2018</p><br>
+            <!-- Cuerpo del articulo y un link-->
+            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p><br>
+            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p><br>
+            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p><br>
+            <p class="article__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, <a href="#" class="article__link">ut enim ad minim veniam</a>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+        </article>
+        <!-- Botones para comentar y compartir -->
+        <section class="container-fluid px-5 pb-5">
+            <!-- Alineamiento segun la resolucion de la pantalla -->
+            <div class="share__button-alignment">
+                <!-- Botones -->
+                <button type="button" class="btn share__button-small me-2">Compartir</button>
+                <button type="button" class="btn share__button-medium">Comentar en twitter</button>
+            </div>
+        </section>
+        <!-- Datos del autor -->
+        <section class="container-fluid p-5">
+            <div class="author__container-align">
+                <!-- Imagen del autor -->
+                <figure class="footer__img-transform py-4">
+                    <img src="assets/img/naomi-thai.png" class="author__img-size author__img-border align-self-center" alt="naomi-thai-alt">
+                </figure>
+                <!-- Nombre y links del autor -->
+                <div class="p-5">
+                    <h2 class="author__font-authorname">Naomi Thai</h2>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="author__link">@Naothai</a>
+                        <a href="#" class="author__link">depelos.com</a>
+                    </div>
+                </div>
+                <p class="author__font-description d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
+        <!-- Botones de paginacion -->
+        <nav class="pagination__background-color container-fluid d-flex justify-content-center p-5">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <!-- Pagina anterior -->
+                    <button type="button" class="pagination__button-previous btn">Anterior</button>
+                    <!-- Pagina 1, 2 y 3 -->
+                    <button type="button" class="pagination__button-currentpage btn">1</button>
+                    <button type="button" class="pagination__button-currentpage btn">2</button>
+                    <button type="button" class="pagination__button-currentpage btn">3</button>
+                    <!-- Pagina siguiente -->
+                    <button type="button" class="pagination__button-next btn">Siguiente</button>
+                </div>
+            </div>
+        </nav>
+        <!-- Footer con su imagen del bigote -->
+        <footer class="footer__background-color container-fluid d-flex justify-content-center">
+            <figure class="footer__img-transform py-4">
+                <img src="assets/img/logo.png" alt="footer-logo-alt" width="144px" height="60px">
+            </figure>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+// Propiedades de los datos del autor
+@media (max-width: 991px) // Centrar contenido si la pantalla es pequeña
+{
+    .author__container-align
+    {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .author__img-size
+    {
+        width: 192px;
+        height: 192px;
+    }
+}
+@media (min-width: 992px) // Correr contenido hacia la izquierda si la pantalla es mas grande
+{
+    .author__container-align
+    {
+        text-align: left;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+    .author__img-size
+    {
+        width: 256px;
+        height: 256px;
+    }
+}
+
+// Imagen redonda
+.author__img-border
+{
+    border-radius: 50%;
+}
+
+// Fuente para el nombre del autor
+.author__font-authorname
+{
+    font-family: $font_style_playfair;
+    font-style: italic;
+    font-size: $font-size-xlarge !important;
+    font-weight: $font_weight_900;
+}
+
+// Fuente para la descripcion del autor
+.author__font-description
+{
+    font-family: $font_style_roboto;
+    font-weight: $font_weight_400;
+    font-size: $font-size-medium !important;
+    color: $color-nickel;
+
+    line-height: 40px;
+}

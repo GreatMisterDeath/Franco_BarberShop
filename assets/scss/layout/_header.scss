@@ -1,0 +1,46 @@
+// Propiedades relacionadas al header de la pagina, a la imagen con su background y fonts
+@media (max-width: 575px) //  Tamaño de letra pequeña si la pantalla es muy pequeña
+{
+    .header__background-font
+    {
+        font-family: $font_style_playfair;
+        font-style: italic;
+        font-size: $font-size-xlarge !important;
+        font-weight: $font_weight_900;
+        color: $color-white;
+    }
+}
+@media (min-width: 576px) // Tamaño de letra grande para pantallas de mayor resolucion
+{
+    .header__background-font
+    {
+        font-family: $font_style_playfair;
+        font-style: italic;
+        font-size: $font-size-xxlarge !important;
+        font-weight: $font_weight_900;
+        color: $color-white;
+    }
+}
+
+// Flecha 1 (link al articulo principal)
+.header__svg-arrow1
+{
+    color: white;
+    margin-top: 250px;
+}
+
+// Flecha 2 (link al articulo principal)
+.header__svg-arrow2
+{
+    color: white;
+    margin-top: -50px;
+}
+
+// Imagen de fondo del header
+.header__background
+{
+    background-image: url('../img/post-image.jpg');
+    background-size: cover;
+    text-align: center;
+    height: 700px;
+}

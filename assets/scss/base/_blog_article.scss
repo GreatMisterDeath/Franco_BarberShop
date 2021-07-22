@@ -1,0 +1,17 @@
+// Propiedades de la fecha
+.article__date
+{
+    font-family: $font_style_playfair;
+    font-weight: $font_weight_400;
+    font-size: $font-size-large !important;
+    color: $color-nickel;
+}
+
+// Propiedades de los parrafos de texto
+.article__paragraph
+{
+    font-family: $font_style_roboto;
+    font-weight: $font_weight_400;
+    color: $color-nickel;
+    line-height: 40px;
+}

@@ -1,0 +1,79 @@
+// Tamaño de letra pequeña y otras propiedades
+@mixin mix_pagination_style_small
+{
+    font-family: 'Roboto', 'Arial';
+    font-size: $font-size-small !important;
+    font-weight: $font_weight_400;
+}
+
+// Tamaño de letra grande y otras propiedades
+@mixin mix_pagination_style_medium
+{
+    font-family: 'Roboto', 'Arial';
+    font-size: $font-size-large !important;
+    font-weight: $font_weight_400;
+}
+
+// Propiedades del boton al hacer hover y focus
+@mixin mix_pagination_hover_focus
+{
+    background-color: $color-white;
+    border: 2px solid $color-light-gray;
+
+    &:hover
+    {
+        background-color: $color-nickel;
+        color: $color-white;
+    }
+
+    &:focus
+    {
+        background-color: $color-nickel;
+        box-shadow: none;
+    }
+}
+
+// Tamaño de la letra de los botones, esta tambien afectara al tamaño del boton
+@mixin mix_pagination_button_size
+{
+    @include mix_pagination_hover_focus;
+
+    @media (max-width: 991px)
+    {
+        @include mix_pagination_style_small;
+    }
+    @media (min-width: 992px)
+    {
+        @include mix_pagination_style_medium;
+    }
+}
+
+// Color de fondo del bloque de botones de paginacion
+.pagination__background-color
+{
+    background-color: $color-platinum;
+}
+
+// Anterior
+.pagination__button-previous
+{
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+
+    @include mix_pagination_button_size
+}
+
+// Numero de pagina
+.pagination__button-currentpage
+{
+    @include mix_pagination_button_size
+}
+
+// Siguiente
+.pagination__button-next
+{
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+
+    @include mix_pagination_button_size
+}
