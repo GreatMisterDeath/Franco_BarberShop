@@ -5,7 +5,7 @@
 // Integracion de parciales
 @import 'abstract/reset'; // Reinicio de estilos
 @import 'abstract/variables'; // Variables de colores, tamaños de fuente etc...
-@import "vendors/bootstrap-5.0.2/bootstrap.scss"; // Bootstrap SASS
+@import "vendors/bootstrap-5.0.2/bootstrap.scss"; // Bootstrap SASS, no lo use pero lo integre como se pidio en el desafio
 @import 'base/blog_article'; // Propiedades del articulo principal del blog
 @import 'base/blog_links'; // Propiedades de los links de todo el sitio
 @import 'layout/author'; // Propiedades de los datos del autor

@@ -10822,8 +10822,8 @@ textarea.form-control-lg {
   }
 
   .author__img-size {
-    width: 224px;
-    height: 224px;
+    width: 256px;
+    height: 256px;
   }
 }
 .author__img-border {
@@ -11035,4 +11035,4 @@ body {
   background-color: #FFFFFF;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
